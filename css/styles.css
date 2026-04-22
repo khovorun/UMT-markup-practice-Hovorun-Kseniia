@@ -6,6 +6,7 @@
   --background-color: #f5f5f5;
   --white-color: #ffffff;
   --footer-bg-color: #dce85b;
+  --card-border-color: #d9d9d9;
 }
 
 *,
@@ -19,25 +20,6 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   color: var(--main-text-color);
   background-color: var(--background-color);
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0;
 }
 
 .header,
@@ -66,7 +48,6 @@ p {
   line-height: 1.1;
   font-weight: 700;
   color: var(--main-text-color);
-  text-decoration: none;
 }
 
 .header-nav-list {
@@ -78,8 +59,6 @@ p {
 .footer-nav-link,
 .social-link,
 .contacts-link {
-  color: var(--main-text-color);
-  text-decoration: none;
   transition: color 250ms ease;
 }
 
@@ -99,7 +78,6 @@ p {
   padding: 14px 24px;
   border: none;
   border-radius: 999px;
-  font-family: inherit;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
@@ -245,8 +223,8 @@ p {
 }
 
 .feedback-title {
-  text-align: center;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .feedback-list {
@@ -261,7 +239,7 @@ p {
 .feedback-card {
   min-height: 180px;
   padding: 24px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--card-border-color);
   border-radius: 16px;
   background-color: var(--white-color);
 }
